@@ -2,3 +2,17 @@ A1)
 Erstelle ein UML Klassendiagramm des Programms.
 
 A2)
+Implementiere eine Klasse "Rechteck" und implementiere Methoden zur berechnung des Flaecheninhalts und Umfangs. 
+
+A3)
+Erstelle eine "Person" Klasse mit vorname, nachname und eine Klasse "Angestellte" mit den variablen angestelltenID und Gehalt. Erstelle auch eine Methode, die alle Daten einer Person ausgibt.
+
+A4)
+Erstelle eine Klasse "Stack" (Last in first out) mit push(), pop(), isEmpty() und peek();
+
+Tipp: Es ist eventuell hilfreich noch andere Methoden zur hilfe zu nehmen.
+
+isEmpty() gibt wahr zurueck falls der Stack leer ist sonst falsch
+peek() zeigt die oberste variable an
+pop() loescht die oberste variable
+push(int) tut eine neue variable auf den stack 
