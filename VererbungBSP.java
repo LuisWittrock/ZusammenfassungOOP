@@ -35,6 +35,7 @@ public class Dog extends Animal
 
 public class Cat extends Animal 
 {
+
   public Cat(String name) //Konstruktor wird bei jedem erstellen eines neuen Objekts der Klasse Cat automatisch augerufen.
   {
     setName(name);
