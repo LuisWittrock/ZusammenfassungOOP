@@ -1,10 +1,10 @@
-public class Animal 
+public class Animal //oberklasse 
 {
   private String name; //private Variablen koennen nur aus der eigenen Klasse veraendert werden.
-  private int age;
+  private int age;  //diese variablen sind in der ganzen klasse zugreifbar
   private int weight;
  
-  public void setName(String name) 
+  public void setName(String name) //die variablen, die hinter einer methode in den klammern stehen sind nur innerhalb der Methode verfuegbar
   {
     this.name = name;
   }
@@ -17,7 +17,7 @@ public class Animal
     this.weight = weight;
   } 
 
-  public void kaka() 
+  public void kaka() //jedes tier muss mal auf klo also ist diese funktion allgemein
   {
     System.out.println("kaka");
     this.weight -= 3;
@@ -25,9 +25,9 @@ public class Animal
  
 }
 
-public class Dog extends Animal 
+public class Dog extends Animal //unterklasse
 {
-  public void bark() 
+  public void bark() //nur der hund bellt, weswegen diese methode nur in der Hundeklasse spezifiziert wird
   {
     System.out.println("wuff");
   }
@@ -46,7 +46,7 @@ public class Cat extends Animal
   }
 }
 
-public class LittleDog extends Dog 
+public class LittleDog extends Dog //der kleine Hund kann was der hund kann allerdings ist sein belen nerviger wesewegen diese methode ueberschrieben wird
 {
   @Override //ueberschreibt die bark methode von der Dog klasse kann aber auch auf alle methoden der Animal klasse zugreifen.
   public void bark() {
@@ -57,8 +57,9 @@ public class LittleDog extends Dog
 public class Main 
 {
   public static void main(String[] args) {
-    Dog dog = new Dog();
+    Dog dog = new Dog(); //neues objekt der klasse dog wird erstellt
 
+    //so wird auf methoden eines objektes/klasse zugegriffen.
     dog.setName("Doggo");    
 
     dog.bark();
