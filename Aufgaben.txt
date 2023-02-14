@@ -1,0 +1,4 @@
+A1)
+Erstelle ein UML Klassendiagramm des Programms.
+
+A2)
