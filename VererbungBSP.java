@@ -1,6 +1,6 @@
 public class Animal 
 {
-  private String name;
+  private String name; //private Variablen koennen nur aus der eigenen Klasse veraendert werden.
   private int age;
   private int weight;
  
